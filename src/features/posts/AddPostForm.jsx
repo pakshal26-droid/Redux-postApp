@@ -9,6 +9,7 @@ function AddPostForm() {
   const [content, setContent] = useState("");
   const [userId, setUserId] = useState("");
 
+  //bringing all the users from the store
   const users = useSelector(selectAllUsers);
 
   const onTitleChanged = (e) => {
@@ -23,7 +24,7 @@ function AddPostForm() {
 
   const onPostSaveClick = () => {
     if (title && content) {
-      dispatch(postAdded(title, content, userId));
+      dispatch(postAdded(title, content, userId)); //sending the data to postAddedslice reducer
 
       setContent("");
       setTitle("");
