@@ -5,7 +5,6 @@ const initialState = [
   {
     id: "1",
     title: "Learning redux toolkit",
-    // date: sub(new Date(), { minutes: 10 }).toISOString(),
     content: "I've heard good things",
   },
 ];
